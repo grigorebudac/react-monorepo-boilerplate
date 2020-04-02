@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "lerna:bootstrap": "lerna bootstrap",
+    "lerna:build": "lerna run --parallel build",
+    "lerna:start": "lerna run --parallel start",
+    "lerna:watch": "lerna run --parallel watch",
+    "lerna:diff": "lerna diff",
+    "lerna:new-version": "lerna version --conventional-commits --yes",
+    "start": "lerna run start --scope=@project/web",
+    "generate": "plop"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "lerna": "^3.20.2",
+    "plop": "^2.6.0",
+    "typescript": "~3.7.2",
+    "typescript-transform-paths": "^1.1.14"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
