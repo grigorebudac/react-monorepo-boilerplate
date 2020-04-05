@@ -21,7 +21,6 @@ yarn start
 Using docker:
 
 ```sh
-yarn install
 docker-compose up
 ```
 
