@@ -25,7 +25,7 @@ docker-compose up
 ```
 
 ## Generating templates
-As the title says, the boilerplate is able to generate code following a predefined pattern.
+The boilerplate is able to generate code following a predefined pattern.
 
 ### Try it out
 ```sh
