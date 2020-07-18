@@ -1,6 +1,6 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 
-import * as UserStore from "./features/user-store";
+import * as UserStore from './store/user-store';
 
 const rootReducer = () => {
   return combineReducers({

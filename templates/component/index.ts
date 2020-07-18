@@ -1,1 +1,1 @@
-export { default } from "./__NAME__";
+export * from "./__NAME__";

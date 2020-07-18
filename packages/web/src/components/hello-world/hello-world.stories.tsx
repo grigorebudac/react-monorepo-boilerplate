@@ -1,6 +1,6 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
+import React from "react";
+import { storiesOf } from "@storybook/react";
 
-import HelloWorld from './hello-world';
+import { HelloWorld } from ".";
 
-storiesOf('Components | Hello World', module).add('Default', () => <HelloWorld />);
+storiesOf("Components | Hello World", module).add("Default", () => <HelloWorld />);

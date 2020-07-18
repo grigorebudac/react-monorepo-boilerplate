@@ -1,6 +1,8 @@
 import React from "react";
 
-const __NAME__ = () => {
+export type __NAME__Props = {};
+
+const __NAME__: React.FC<__NAME__Props> = () => {
   return (
     <div>
       <h2>Hello World</h2>
@@ -8,4 +10,4 @@ const __NAME__ = () => {
   );
 };
 
-export default __NAME__;
+export { __NAME__ };

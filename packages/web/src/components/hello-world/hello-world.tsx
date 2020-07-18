@@ -1,6 +1,8 @@
-import React from 'react';
+import React from "react";
 
-const HelloWorld = () => {
+export type HelloWorldProps = {};
+
+const HelloWorld: React.FC<HelloWorldProps> = () => {
   return (
     <div>
       <h2>Hello World</h2>
@@ -8,4 +10,4 @@ const HelloWorld = () => {
   );
 };
 
-export default HelloWorld;
+export { HelloWorld };

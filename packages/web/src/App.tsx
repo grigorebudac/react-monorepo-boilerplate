@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ApplicationContainer from 'containers/ApplicationContainer';
+import { ApplicationContainer } from 'containers';
 import Routes from 'routes';
 
 const App = () => {
@@ -13,4 +13,4 @@ const App = () => {
   );
 };
 
-export default App;
+export { App };

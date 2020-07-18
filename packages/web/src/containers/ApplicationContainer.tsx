@@ -2,21 +2,17 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
 
-import configureStore from 'redux/configure-store';
+import configureStore from 'store/configure-store';
 import history from 'routes/history';
 
 const store = configureStore();
 
-interface IProps {
-  children: React.ReactNode;
-}
-
-function ApplicationContainer({ children }: IProps) {
+const ApplicationContainer: React.FC = props => {
   return (
     <Provider store={store}>
-      <Router history={history}>{children}</Router>
+      <Router history={history}>{props.children}</Router>
     </Provider>
   );
-}
+};
 
-export default ApplicationContainer;
+export { ApplicationContainer };

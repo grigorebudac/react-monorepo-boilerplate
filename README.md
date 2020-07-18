@@ -1,6 +1,7 @@
 # React monorepo boilerplate
 
 ## Features
+
 - lerna
 - typescript
 - @redux/toolkit
@@ -11,23 +12,18 @@
 
 ## Development setup
 
-
 ```sh
 yarn install
 yarn lerna:bootstrap
 yarn start
 ```
 
-Using docker:
-
-```sh
-docker-compose up
-```
-
 ## Generating templates
+
 The boilerplate is able to generate code following a predefined pattern.
 
 ### Try it out
+
 ```sh
 yarn generate
 ```
