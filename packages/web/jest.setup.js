@@ -5,7 +5,7 @@ if (global.document) {
     setStart: () => {},
     setEnd: () => {},
     commonAncestorContainer: {
-      nodeName: "BODY",
+      nodeName: 'BODY',
       ownerDocument: document
     }
   });

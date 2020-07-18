@@ -1,2 +1,1 @@
-// interfaces
-export * from "./interfaces/user-interface";
+export * from "./types";
