@@ -1,26 +1,33 @@
-const templatePage = "templates/page";
+const templateModule = "templates/module";
 const templateComponent = "templates/component";
 
-const templatePageActions = [
+const templateModuleActions = [
   {
     type: "addMany",
-    destination: "packages/web/src/pages/{{name}}",
-    base: templatePage,
-    templateFiles: templatePage,
+    destination: "packages/web/src/modules/{{name}}",
+    base: templateModule,
+    templateFiles: templateModule,
+    template: "{{dashCase name}}",
   },
   // component
   {
     type: "modify",
-    path: "packages/web/src/pages/{{name}}/{{name}}.tsx",
+    path: "packages/web/src/modules/{{name}}/{{name}}.tsx",
     pattern: /__NAME__/gi,
     template: "{{properCase name}}",
   },
   // index
   {
     type: "modify",
-    path: "packages/web/src/pages/{{name}}/index.ts",
-    pattern: /__NAME__/gi,
+    path: "packages/web/src/modules/{{name}}/index.ts",
+    pattern: /__PATH__/gi,
     template: "{{dashCase name}}",
+  },
+  {
+    type: "modify",
+    path: "packages/web/src/modules/{{name}}/index.ts",
+    pattern: /__NAME__/gi,
+    template: "{{properCase name}}",
   },
 ];
 
@@ -73,4 +80,4 @@ const templateComponentActions = [
   },
 ];
 
-module.exports = { templatePageActions, templateComponentActions };
+module.exports = { templateModuleActions, templateComponentActions };

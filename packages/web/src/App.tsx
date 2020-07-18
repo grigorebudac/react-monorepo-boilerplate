@@ -1,13 +1,13 @@
 import React from 'react';
 
 import { ApplicationContainer } from 'containers';
-import Routes from 'routes';
+import { Navigation } from 'navigation';
 
 const App = () => {
   return (
     <React.StrictMode>
       <ApplicationContainer>
-        <Routes />
+        <Navigation />
       </ApplicationContainer>
     </React.StrictMode>
   );

@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
 
 import configureStore from 'store/configure-store';
-import history from 'routes/history';
+import history from 'navigation/history';
 
 const store = configureStore();
 

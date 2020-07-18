@@ -1,14 +1,14 @@
-import React from "react";
-import { render } from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect";
+import React from 'react';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
 
-import { HelloWorld } from ".";
+import { HelloWorld } from '.';
 
-describe("<HelloWorld />", () => {
+describe('<HelloWorld />', () => {
   const renderComponent = () => render(<HelloWorld />);
 
-  test("Renders content correctly", () => {
+  test('Renders content correctly', () => {
     const { queryByText } = renderComponent();
-    expect(queryByText("Hello World")).toBeInTheDocument();
+    expect(queryByText('Hello World')).toBeInTheDocument();
   });
 });
