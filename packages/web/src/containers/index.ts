@@ -1,1 +1,1 @@
-export * from './ApplicationContainer';
+export * from './application-container';
